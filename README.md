@@ -32,3 +32,8 @@ To launch the application we will start in production mode.
 ```
 
 You should now be able to see a local version of the project at http://localhost:3000
+
+
+###Viewing the presentation
+There is a powerpoint presentation inside the repository called 'Rails-Caching-Presentation.pptx'.
+This contains information about rails caching: explanations and examples using the project.

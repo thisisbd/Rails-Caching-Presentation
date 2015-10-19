@@ -1,4 +1,4 @@
-<% cache ['all-articles', @articles], :skip_digest => true do %>
+<% cache ['all-articles', @articles] do %>
 
 <h1>Listing Articles</h1>
 <%= link_to 'New article', new_article_path %>
