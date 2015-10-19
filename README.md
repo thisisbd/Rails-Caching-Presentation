@@ -3,13 +3,13 @@
 
 A presentation on how rails caching works.
 
-#Installation
+##Installation
 ###An installation guide on working with the caching project.
 
 ###Clone the GIT repository
 ```
     git clone git@github.com:thisisbd/Rails-Caching-Presentation.git
-    cd 'Rails-Caching-Presentation'
+    cd Rails-Caching-Presentation
 ```
 
 ###Install the dependencies
