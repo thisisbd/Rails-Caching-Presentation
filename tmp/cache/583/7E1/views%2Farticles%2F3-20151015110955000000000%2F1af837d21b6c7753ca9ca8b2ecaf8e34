@@ -1,0 +1,10 @@
+o: ActiveSupport::Cache::Entry:@valueI"D          <tr>
+            <td>I like to write lots of content!</td>
+            <td>Content! Content! Content! Content! Content! Content! Content! Content! Content!
+Content! Content! Content! Content! Content! Content! Content! Content! Content!
+Content! Content! Content! Content! Content! Content! Content! Content! Content!</td>
+            <td><a href="/articles/3">Show</a></td>
+            <td><a href="/articles/3/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/3">Destroy</a></td>
+          </tr>
+:ET:@created_atf1445254409.640466:@expires_in0

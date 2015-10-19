@@ -1,0 +1,77 @@
+o: ActiveSupport::Cache::Entry:@valueI"E<p>
+  <strong>Title:</strong>
+  Windows are blue.
+</p>
+
+<p>
+  <strong>Text:</strong>
+  But trees are green?
+Do they have leafs?
+</p>
+
+<h2>Comments</h2>
+<p>
+  <strong>Commenter:</strong>
+  John
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  FGSDFGDGD
+</p>
+
+<p>
+  <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/1/comments/5">Destroy Comment</a>
+</p><p>
+  <strong>Commenter:</strong>
+  NEW COMMENT PERSON
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  CONTENT THAT SHOULD BE NEWLY CACHED!
+
+CONTENT THAT SHOULD BE NEWLY CACHED!
+
+CONTENT THAT SHOULD BE NEWLY CACHED!
+
+CONTENT THAT SHOULD BE NEWLY CACHED!
+
+
+</p>
+
+<p>
+  <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/1/comments/10">Destroy Comment</a>
+</p><p>
+  <strong>Commenter:</strong>
+  Mr Bloggs
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  I think that site is a piece of crap... I mean you don&#39;t even have proper caching...
+</p>
+
+<p>
+  <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/1/comments/11">Destroy Comment</a>
+</p>
+
+<h2>Add a comment:</h2>
+<form class="new_comment" id="new_comment" action="/articles/1/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9uUKXaFsuodI5VJ7WJDv2rutA1vHURobvN4rlChRYRvfAW7lmFUYnVP/W8C60T0Y5r1uHXqRbG3Jwop6988W5g==" />
+    <p>
+      <label for="comment_commenter">Commenter</label><br>
+      <input type="text" name="comment[commenter]" id="comment_commenter" />
+    </p>
+    <p>
+      <label for="comment_body">Body</label><br>
+      <textarea name="comment[body]" id="comment_body">
+</textarea>
+    </p>
+    <p>
+      <input type="submit" name="commit" value="Create Comment" />
+    </p>
+</form>
+
+<a href="/articles/1/edit">Edit</a> |
+<a href="/articles">Back</a>
+:ET:@created_atf1445254429.638582:@expires_in0

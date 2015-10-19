@@ -1,0 +1,8 @@
+o: ActiveSupport::Cache::Entry:@valueI"^          <tr>
+            <td>Untitled - A mystery for all</td>
+            <td>Untitled - content</td>
+            <td><a href="/articles/4">Show</a></td>
+            <td><a href="/articles/4/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/4">Destroy</a></td>
+          </tr>
+:ET:@created_atf1445254266.152524:@expires_in0

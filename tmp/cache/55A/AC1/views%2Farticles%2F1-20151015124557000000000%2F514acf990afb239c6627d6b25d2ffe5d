@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry:@valueI"j          <tr>
+            <td>Windows are blue.</td>
+            <td>But trees are green?
+Do they have leafs?</td>
+            <td><a href="/articles/1">Show</a></td>
+            <td><a href="/articles/1/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/1">Destroy</a></td>
+          </tr>
+:ET:@created_atf1445254266.1467252:@expires_in0

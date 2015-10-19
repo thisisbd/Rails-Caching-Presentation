@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry:@valueI"‘          <tr>
+            <td>Monkeys have legs!</td>
+            <td>New study proves that monkey&#39;s also have legs... 
+And also they have arms!</td>
+            <td><a href="/articles/2">Show</a></td>
+            <td><a href="/articles/2/edit">Edit</a></td>
+            <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/2">Destroy</a></td>
+          </tr>
+:ET:@created_atf1445254308.71757:@expires_in0

@@ -1,0 +1,17 @@
+<%
+cache "cache-test-data" do
+%>
+<h1>Can this be cached?</h1>
+
+<p>A lot of small data</p>
+<div style="font-size: 2px; display: none;">
+    <% (0..1000).each do %>
+        <% (0..400).each do %>
+          BD
+        <% end %>
+        </br>
+    <% end %>
+</div>
+<%
+end #end cache block
+%>

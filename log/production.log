@@ -1,0 +1,250 @@
+I, [2015-10-19T15:30:06.733309 #13197]  INFO -- : Started GET "/" for ::1 at 2015-10-19 15:30:06 +0100
+I, [2015-10-19T15:30:06.756751 #13197]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-10-19T15:30:06.769913 #13197]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.1ms)
+I, [2015-10-19T15:30:06.771144 #13197]  INFO -- : Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:30:07.754643 #13197]  INFO -- : Started GET "/" for ::1 at 2015-10-19 15:30:07 +0100
+I, [2015-10-19T15:30:07.755444 #13197]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-10-19T15:30:07.756475 #13197]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (0.3ms)
+I, [2015-10-19T15:30:07.757048 #13197]  INFO -- : Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:30:34.973624 #13654]  INFO -- : Started GET "/" for ::1 at 2015-10-19 15:30:34 +0100
+F, [2015-10-19T15:30:35.001048 #13654] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'caching-experement_production-test3'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/djackson/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/djackson/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/djackson/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/djackson/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/djackson/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-10-19T15:31:04.632659 #13984] DEBUG -- :   [1m[36m (61.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2015-10-19T15:31:04.841423 #13984] DEBUG -- :   [1m[35m (207.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2015-10-19T15:31:04.842468 #13984] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-10-19T15:31:04.846043 #13984]  INFO -- : Migrating to CreateArticles (20151014110947)
+D, [2015-10-19T15:31:04.989219 #13984] DEBUG -- :   [1m[35m (141.8ms)[0m  CREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `text` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-10-19T15:31:05.016959 #13984] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2015-10-19T15:31:05.019780 #13984] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151014110947')
+D, [2015-10-19T15:31:05.020405 #13984] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+I, [2015-10-19T15:31:05.020477 #13984]  INFO -- : Migrating to CreateComments (20151014133121)
+D, [2015-10-19T15:31:05.188224 #13984] DEBUG -- :   [1m[35m (166.4ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_comments_on_article_id`  (`article_id`) ) ENGINE=InnoDB
+D, [2015-10-19T15:31:05.300635 #13984] DEBUG -- :   [1m[36m (111.6ms)[0m  [1mALTER TABLE `comments` ADD CONSTRAINT `fk_rails_3bf61a60d3`
+FOREIGN KEY (`article_id`)
+  REFERENCES `articles` (`id`)
+[0m
+D, [2015-10-19T15:31:05.301199 #13984] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2015-10-19T15:31:05.301812 #13984] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151014133121')[0m
+D, [2015-10-19T15:31:05.302365 #13984] DEBUG -- :   [1m[35m (0.4ms)[0m  COMMIT
+I, [2015-10-19T15:31:12.893384 #13986]  INFO -- : Started GET "/" for ::1 at 2015-10-19 15:31:12 +0100
+I, [2015-10-19T15:31:12.905309 #13986]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-10-19T15:31:12.917563 #13986]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.0ms)
+I, [2015-10-19T15:31:12.918654 #13986]  INFO -- : Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:31:14.012965 #13986]  INFO -- : Started GET "/articles" for ::1 at 2015-10-19 15:31:14 +0100
+I, [2015-10-19T15:31:14.014926 #13986]  INFO -- : Processing by ArticlesController#index as HTML
+D, [2015-10-19T15:31:14.022177 #13986] DEBUG -- :   [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+I, [2015-10-19T15:31:14.025579 #13986]  INFO -- : Read fragment views/all-articles/ (0.1ms)
+I, [2015-10-19T15:31:14.027170 #13986]  INFO -- : Write fragment views/all-articles/ (1.2ms)
+I, [2015-10-19T15:31:14.027337 #13986]  INFO -- :   Rendered articles/index.html.erb within layouts/application (7.4ms)
+I, [2015-10-19T15:31:14.028090 #13986]  INFO -- : Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 2.4ms)
+I, [2015-10-19T15:31:15.043486 #13986]  INFO -- : Started GET "/articles/new" for ::1 at 2015-10-19 15:31:15 +0100
+I, [2015-10-19T15:31:15.044623 #13986]  INFO -- : Processing by ArticlesController#new as HTML
+I, [2015-10-19T15:31:15.077431 #13986]  INFO -- :   Rendered articles/_form.html.erb (22.7ms)
+I, [2015-10-19T15:31:15.077660 #13986]  INFO -- :   Rendered articles/new.html.erb within layouts/application (25.6ms)
+I, [2015-10-19T15:31:15.078347 #13986]  INFO -- : Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+I, [2015-10-19T15:31:16.268373 #13986]  INFO -- : Started GET "/articles" for ::1 at 2015-10-19 15:31:16 +0100
+I, [2015-10-19T15:31:16.269235 #13986]  INFO -- : Processing by ArticlesController#index as HTML
+D, [2015-10-19T15:31:16.270594 #13986] DEBUG -- :   [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`
+I, [2015-10-19T15:31:16.270912 #13986]  INFO -- : Read fragment views/all-articles/ (0.2ms)
+I, [2015-10-19T15:31:16.271014 #13986]  INFO -- :   Rendered articles/index.html.erb within layouts/application (0.9ms)
+I, [2015-10-19T15:31:16.271601 #13986]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+I, [2015-10-19T15:31:44.885806 #14350]  INFO -- : Started GET "/articles" for ::1 at 2015-10-19 15:31:44 +0100
+I, [2015-10-19T15:31:44.907650 #14350]  INFO -- : Processing by ArticlesController#index as HTML
+D, [2015-10-19T15:31:44.922121 #14350] DEBUG -- :   [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+I, [2015-10-19T15:31:44.961225 #14350]  INFO -- : Read fragment views/all-articles/articles/1-20151019113353000000000/articles/2-20151015113320000000000/articles/3-20151015110955000000000/articles/4-20151015133930000000000 (0.2ms)
+I, [2015-10-19T15:31:44.961358 #14350]  INFO -- :   Rendered articles/index.html.erb within layouts/application (41.5ms)
+I, [2015-10-19T15:31:44.962724 #14350]  INFO -- : Completed 200 OK in 55ms (Views: 14.9ms | ActiveRecord: 32.0ms)
+I, [2015-10-19T15:31:52.226286 #14350]  INFO -- : Started GET "/articles" for ::1 at 2015-10-19 15:31:52 +0100
+I, [2015-10-19T15:31:52.227044 #14350]  INFO -- : Processing by ArticlesController#index as HTML
+D, [2015-10-19T15:31:52.228332 #14350] DEBUG -- :   [1m[35mArticle Load (0.3ms)[0m  SELECT `articles`.* FROM `articles`
+I, [2015-10-19T15:31:52.229109 #14350]  INFO -- : Read fragment views/all-articles/articles/1-20151019113353000000000/articles/2-20151015113320000000000/articles/3-20151015110955000000000/articles/4-20151015133930000000000 (0.2ms)
+I, [2015-10-19T15:31:52.229213 #14350]  INFO -- :   Rendered articles/index.html.erb within layouts/application (1.4ms)
+I, [2015-10-19T15:31:52.229739 #14350]  INFO -- : Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+I, [2015-10-19T15:31:56.866753 #14350]  INFO -- : Started GET "/articles" for ::1 at 2015-10-19 15:31:56 +0100
+I, [2015-10-19T15:31:56.867440 #14350]  INFO -- : Processing by ArticlesController#index as HTML
+D, [2015-10-19T15:31:56.868690 #14350] DEBUG -- :   [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+I, [2015-10-19T15:31:56.869454 #14350]  INFO -- : Read fragment views/all-articles/articles/1-20151019113353000000000/articles/2-20151015113320000000000/articles/3-20151015110955000000000/articles/4-20151015133930000000000 (0.2ms)
+I, [2015-10-19T15:31:56.869550 #14350]  INFO -- :   Rendered articles/index.html.erb within layouts/application (1.4ms)
+I, [2015-10-19T15:31:56.870267 #14350]  INFO -- : Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+I, [2015-10-19T15:32:25.387825 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:25 +0100
+I, [2015-10-19T15:32:25.389452 #14350]  INFO -- : Processing by CachetestController#index as HTML
+D, [2015-10-19T15:32:25.395584 #14350] DEBUG -- :   Cache digest for app/views/cachetest/index.html.erb: 09de182ae0b02ded92c2cd772d388304
+I, [2015-10-19T15:32:25.395951 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (0.1ms)
+I, [2015-10-19T15:32:25.561242 #14350]  INFO -- : Write fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (10.2ms)
+I, [2015-10-19T15:32:25.575088 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (181.5ms)
+I, [2015-10-19T15:32:25.578961 #14350]  INFO -- : Completed 200 OK in 189ms (Views: 188.8ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:34.622063 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:34 +0100
+I, [2015-10-19T15:32:34.623473 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:34.687175 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (62.6ms)
+I, [2015-10-19T15:32:34.691175 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (66.7ms)
+I, [2015-10-19T15:32:34.699603 #14350]  INFO -- : Completed 200 OK in 76ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:40.778373 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:40 +0100
+I, [2015-10-19T15:32:40.779066 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:40.783492 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (3.7ms)
+I, [2015-10-19T15:32:40.786203 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.4ms)
+I, [2015-10-19T15:32:40.788829 #14350]  INFO -- : Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:43.591702 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:43 +0100
+I, [2015-10-19T15:32:43.592482 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:43.597941 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (4.7ms)
+I, [2015-10-19T15:32:43.602851 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (9.7ms)
+I, [2015-10-19T15:32:43.605141 #14350]  INFO -- : Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:50.109664 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:50 +0100
+I, [2015-10-19T15:32:50.110722 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:50.117864 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (6.3ms)
+I, [2015-10-19T15:32:50.122880 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (11.4ms)
+I, [2015-10-19T15:32:50.127730 #14350]  INFO -- : Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:50.205911 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:50 +0100
+I, [2015-10-19T15:32:50.206674 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:50.272746 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (65.1ms)
+I, [2015-10-19T15:32:50.276885 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (69.2ms)
+I, [2015-10-19T15:32:50.279947 #14350]  INFO -- : Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:51.937483 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:51 +0100
+I, [2015-10-19T15:32:51.938197 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:51.942926 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (4.0ms)
+I, [2015-10-19T15:32:51.945904 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (7.0ms)
+I, [2015-10-19T15:32:51.997721 #14350]  INFO -- : Completed 200 OK in 59ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:52.896971 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:52 +0100
+I, [2015-10-19T15:32:52.899450 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:52.904830 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (4.4ms)
+I, [2015-10-19T15:32:52.908240 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (7.8ms)
+I, [2015-10-19T15:32:52.912151 #14350]  INFO -- : Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:32:59.938707 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:32:59 +0100
+I, [2015-10-19T15:32:59.939400 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:32:59.947351 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (7.2ms)
+I, [2015-10-19T15:32:59.951045 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (10.9ms)
+I, [2015-10-19T15:32:59.954321 #14350]  INFO -- : Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:33:01.263765 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:33:01 +0100
+I, [2015-10-19T15:33:01.264908 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:33:01.269574 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (3.9ms)
+I, [2015-10-19T15:33:01.272783 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (7.2ms)
+I, [2015-10-19T15:33:01.276230 #14350]  INFO -- : Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:33:07.049553 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:33:07 +0100
+I, [2015-10-19T15:33:07.050277 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:33:07.054635 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (3.6ms)
+I, [2015-10-19T15:33:07.059633 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (8.7ms)
+I, [2015-10-19T15:33:07.062493 #14350]  INFO -- : Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:33:09.086851 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:33:09 +0100
+I, [2015-10-19T15:33:09.087552 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:33:09.092208 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (3.9ms)
+I, [2015-10-19T15:33:09.095024 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.7ms)
+I, [2015-10-19T15:33:09.097919 #14350]  INFO -- : Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:33:58.738782 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:33:58 +0100
+I, [2015-10-19T15:33:58.739511 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:33:58.745910 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (5.6ms)
+I, [2015-10-19T15:33:58.793145 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (52.9ms)
+I, [2015-10-19T15:33:58.795994 #14350]  INFO -- : Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:01.746626 #14350]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:01 +0100
+I, [2015-10-19T15:34:01.747304 #14350]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:01.751377 #14350]  INFO -- : Read fragment views/cache-test-data/09de182ae0b02ded92c2cd772d388304 (3.3ms)
+I, [2015-10-19T15:34:01.753752 #14350]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (5.8ms)
+I, [2015-10-19T15:34:01.756467 #14350]  INFO -- : Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:21.661148 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:21 +0100
+I, [2015-10-19T15:34:21.699892 #15689]  INFO -- : Processing by CachetestController#index as HTML
+D, [2015-10-19T15:34:21.719657 #15689] DEBUG -- :   Cache digest for app/views/cachetest/index.html.erb: 29dc095e506eecf968c3113dfadcda70
+I, [2015-10-19T15:34:21.720065 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (0.2ms)
+I, [2015-10-19T15:34:21.894244 #15689]  INFO -- : Write fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (18.7ms)
+I, [2015-10-19T15:34:21.901532 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (183.8ms)
+I, [2015-10-19T15:34:21.906325 #15689]  INFO -- : Completed 200 OK in 206ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:24.474510 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:24 +0100
+I, [2015-10-19T15:34:24.475331 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:24.479350 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (3.1ms)
+I, [2015-10-19T15:34:24.482733 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.7ms)
+I, [2015-10-19T15:34:24.486485 #15689]  INFO -- : Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:25.273536 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:25 +0100
+I, [2015-10-19T15:34:25.274188 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:25.277851 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (2.9ms)
+I, [2015-10-19T15:34:25.281518 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.6ms)
+I, [2015-10-19T15:34:25.285079 #15689]  INFO -- : Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:26.498145 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:26 +0100
+I, [2015-10-19T15:34:26.498866 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:26.504377 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (4.7ms)
+I, [2015-10-19T15:34:26.507697 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (8.1ms)
+I, [2015-10-19T15:34:26.555713 #15689]  INFO -- : Completed 200 OK in 57ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:29.449987 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:29 +0100
+I, [2015-10-19T15:34:29.450663 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:29.454545 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (3.1ms)
+I, [2015-10-19T15:34:29.457452 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.0ms)
+I, [2015-10-19T15:34:29.460354 #15689]  INFO -- : Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:31.065786 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:31 +0100
+I, [2015-10-19T15:34:31.066468 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:31.112160 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (44.8ms)
+I, [2015-10-19T15:34:31.114546 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (47.3ms)
+I, [2015-10-19T15:34:31.117323 #15689]  INFO -- : Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:34:35.370069 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:34:35 +0100
+I, [2015-10-19T15:34:35.370796 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:34:35.375208 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (3.6ms)
+I, [2015-10-19T15:34:35.378180 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (6.7ms)
+I, [2015-10-19T15:34:35.383158 #15689]  INFO -- : Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:39:21.370135 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:39:21 +0100
+I, [2015-10-19T15:39:21.370842 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:39:21.378593 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (7.0ms)
+I, [2015-10-19T15:39:21.381104 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (9.5ms)
+I, [2015-10-19T15:39:21.384143 #15689]  INFO -- : Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:39:27.538130 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:39:27 +0100
+I, [2015-10-19T15:39:27.538806 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:39:27.542208 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (2.7ms)
+I, [2015-10-19T15:39:27.544886 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (5.4ms)
+I, [2015-10-19T15:39:27.547750 #15689]  INFO -- : Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:39:31.050096 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:39:31 +0100
+I, [2015-10-19T15:39:31.050798 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:39:31.054830 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (3.3ms)
+I, [2015-10-19T15:39:31.059835 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (8.4ms)
+I, [2015-10-19T15:39:31.062749 #15689]  INFO -- : Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:39:34.193998 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:39:34 +0100
+I, [2015-10-19T15:39:34.194712 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:39:34.198423 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (3.0ms)
+I, [2015-10-19T15:39:34.201294 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (5.9ms)
+I, [2015-10-19T15:39:34.204943 #15689]  INFO -- : Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+I, [2015-10-19T15:39:38.994910 #15689]  INFO -- : Started GET "/cachetest" for ::1 at 2015-10-19 15:39:38 +0100
+I, [2015-10-19T15:39:38.995593 #15689]  INFO -- : Processing by CachetestController#index as HTML
+I, [2015-10-19T15:39:39.044108 #15689]  INFO -- : Read fragment views/cache-test-data/29dc095e506eecf968c3113dfadcda70 (47.8ms)
+I, [2015-10-19T15:39:39.046736 #15689]  INFO -- :   Rendered cachetest/index.html.erb within layouts/application (50.4ms)
+I, [2015-10-19T15:39:39.049843 #15689]  INFO -- : Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
