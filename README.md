@@ -9,7 +9,7 @@ A presentation on how rails caching works.
 ###Clone the GIT repository
 ```
     git clone git@github.com:thisisbd/Rails-Caching-Presentation.git
-    cd 'caching-experement'
+    cd 'Rails-Caching-Presentation'
 ```
 
 ###Install the dependencies
