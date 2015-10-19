@@ -1,18 +1,16 @@
 #Rails Caching Presentation
-=======
-
 A presentation on how rails caching works.
 
-##Installation
-###An installation guide on working with the caching project.
+###Installation
+####An installation guide on working with the caching project.
 
-###Clone the GIT repository
+####Clone the GIT repository
 ```
     git clone git@github.com:thisisbd/Rails-Caching-Presentation.git
     cd Rails-Caching-Presentation
 ```
 
-###Install the dependencies
+####Install the dependencies
 For development, setup the database.
 ```
     brew update
@@ -32,7 +30,6 @@ To launch the application we will start in production mode.
 ```
 
 You should now be able to see a local version of the project at http://localhost:3000
-
 
 ###Viewing the presentation
 There is a powerpoint presentation inside the repository called 'Rails-Caching-Presentation.pptx'.
